@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">You deserve some rest! <br> Always Take Care of Yourself ah?</h1>
+      </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn" id="btn5" onclick="moveButton()">
+        Ayoko!
+      </button>
+      <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/TPqG5ZcS/my-melody-sanrio-1.gif' border='0' alt='my-melody-sanrio-1'/ id="yupyup"></a>
+      <button class="btn" id="btn6" onclick="nextPage()">
+        Opo!
+      </button>
+    </div>
+    <script>
+      function nextPage() {
+        window.location.href = "branch21.html";
+      }
+
+      function moveButton() {
+             var button = document.getElementById('btn5');
+             var currentWidth = button.offsetWidth;
+             var currentHeight = button.offsetHeight;
+
+             button.style.width = currentWidth * 0.9 + "px";
+             button.style.height = currentHeight * 0.9 + "px";
+             button.style.fontSize = (parseInt(window.getComputedStyle(button).fontSize) * 0.9) + "px";
+            }
+    </script>
+  </body>
+</html>

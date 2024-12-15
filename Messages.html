@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="hdmsg">You made it! <br> Congratulations on conquering this year!</h1>
+    <a href='https://postimg.cc/kBsMxzm7' target='_blank'>
+      <img src='https://i.postimg.cc/bwcGjfVS/1.png' border='0' id="a5" alt='1'/>
+    </a>    
+    <a href='https://postimg.cc/QFnXz7CP' target='_blank'>
+      <img src='https://i.postimg.cc/bvqssHhz/2.png' border='0'  id="b6" alt='2'/>
+    </a>    
+    <a href='https://postimg.cc/fSZZdjq3' target='_blank'>
+      <img src='https://i.postimg.cc/sxG2tTpJ/3.png' border='0'  id="c7" alt='3'/>
+    </a>
+    <button class="btn"  id="msg2" onclick="nextPage()">Wanna Vibe with me?</button>
+
+    <script>
+      function nextPage() {
+      window.location.href = "msg1.html";
+    }
+
+    function moveButton() {
+              var x =
+                Math.random() *
+                (window.innerWidth -
+                  document.getElementByCLass("noButton").offsetWidth);
+              var y =
+                Math.random() *
+                (window.innerHeight -
+                  document.getElementByClass("noButton").offsetHeight);
+              document.getElementByClass("noButton").style.left = `${x}px`;
+              document.getElementByClass("noButton").style.top = `${y}px`;
+            }
+    </script>
+   </body>
+</html>
